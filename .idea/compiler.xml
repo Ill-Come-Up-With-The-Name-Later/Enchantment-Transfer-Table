@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="&quot;-AoutRefMapFile=C:\Users\Max\IdeaProjects\Enchantment Transfer Table\build\classes\java\client\client-enchantment_transfer_table-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=C:\Users\Max\IdeaProjects\Enchantment Transfer Table\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.client.tiny&quot; -AinMapFileNamedIntermediary=C:\Users\Max\.gradle\caches\fabric-loom\1.21.1\net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2\mappings.tiny" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Enchantment_Transfer_Table.main" options="&quot;-AoutRefMapFile=C:\Users\Max\IdeaProjects\Enchantment Transfer Table\build\classes\java\main\enchantment_transfer_table-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=C:\Users\Max\IdeaProjects\Enchantment Transfer Table\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.main.tiny&quot; -AinMapFileNamedIntermediary=C:\Users\Max\.gradle\caches\fabric-loom\1.21.1\net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2\mappings.tiny" />
+      <module name="Enchantment_Transfer_Table.test" options="&quot;-AoutRefMapFile=C:\Users\Max\IdeaProjects\Enchantment Transfer Table\build\classes\java\test\test-enchantment_transfer_table-refmap.json&quot; -AdefaultObfuscationEnv=named:intermediary -Aquiet=true &quot;-AoutMapFileNamedIntermediary=C:\Users\Max\IdeaProjects\Enchantment Transfer Table\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2.test.tiny&quot; -AinMapFileNamedIntermediary=C:\Users\Max\.gradle\caches\fabric-loom\1.21.1\net.fabricmc.yarn.1_21_1.1.21.1+build.3-v2\mappings.tiny" />
+    </option>
+  </component>
+</project>

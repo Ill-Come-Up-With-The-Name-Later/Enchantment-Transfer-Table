@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: net_fabricmc_yarn_1_21_1_1_21_1_build_3_v2.net.fabricmc.fabric-api:fabric-convention-tags-v2-common:2.10.0+9465b64419" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net_fabricmc_yarn_1_21_1_1_21_1_build_3_v2.net.fabricmc.fabric-api" artifactId="fabric-convention-tags-v2-common" version="2.10.0+9465b64419" baseVersion="2.10.0+9465b64419" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_21_1_1_21_1_build_3_v2/net/fabricmc/fabric-api/fabric-convention-tags-v2-common/2.10.0+9465b64419/fabric-convention-tags-v2-common-2.10.0+9465b64419.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_21_1_1_21_1_build_3_v2/net/fabricmc/fabric-api/fabric-convention-tags-v2-common/2.10.0+9465b64419/fabric-convention-tags-v2-common-2.10.0+9465b64419-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

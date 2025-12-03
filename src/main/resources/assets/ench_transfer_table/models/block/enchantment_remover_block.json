@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "ench_transfer_table:block/enchantment_remover_top",
+    "bottom": "ench_transfer_table:block/enchantment_remover_bottom",
+    "side": "ench_transfer_table:block/enchantment_remover_side"
+  }
+}

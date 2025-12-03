@@ -1,0 +1,11 @@
+{
+    "block.ench_transfer_table.enchantment_transfer_table_block": "Enchantment Transfer Table",
+    "item.ench_transfer_table.enchantment_transfer_table": "Enchantment Transfer Table",
+    "block.ench_transfer_table.enchantment_remover_block": "Enchantment Remover",
+    "item.ench_transfer_table.enchantment_remover": "Enchantment Remover (WIP)",
+    "item.ench_transfer_table.transfer_charge": "Transfer Charge",
+    "item.ench_transfer_table.nether_star_fragment": "Nether Star Fragment",
+    "item.ench_transfer_table.enchantment_copier": "Enchantment Copier",
+    "item.ench_transfer_table.item_purifier": "Item Purifier",
+    "item.ench_transfer_table.guided_launcher": "Interceptor (WIP)r"
+}

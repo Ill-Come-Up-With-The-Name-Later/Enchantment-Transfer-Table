@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.burningaspect.enchantment_transfer_table.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "InvinciblePets",
+    "RemoveEnchantmentLevelLimit"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

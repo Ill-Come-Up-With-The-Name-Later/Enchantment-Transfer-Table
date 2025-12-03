@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "ench_transfer_table:enchantment_transfer_table_block",
+    "ench_transfer_table:enchantment_remover_block"
+  ]
+}

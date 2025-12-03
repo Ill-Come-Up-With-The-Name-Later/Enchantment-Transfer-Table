@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ench_transfer_table:item/nether_star_fragment"
+  }
+}

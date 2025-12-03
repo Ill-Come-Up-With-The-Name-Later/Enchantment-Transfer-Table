@@ -1,0 +1,230 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 2025-03-17 13:55:10
+Description: Ticking entity
+
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1025
+	at knot//it.unimi.dsi.fastutil.ints.Int2ObjectLinkedOpenHashMap.insert(Int2ObjectLinkedOpenHashMap.java:311)
+	at knot//it.unimi.dsi.fastutil.ints.Int2ObjectLinkedOpenHashMap.put(Int2ObjectLinkedOpenHashMap.java:323)
+	at knot//net.minecraft.world.EntityList.ensureSafe(EntityList.java:34)
+	at knot//net.minecraft.world.EntityList.add(EntityList.java:44)
+	at knot//net.minecraft.server.world.ServerWorld$ServerEntityHandler.startTicking(ServerWorld.java:1935)
+	at knot//net.minecraft.server.world.ServerWorld$ServerEntityHandler.startTicking(ServerWorld.java:1928)
+	at knot//net.minecraft.server.world.ServerEntityManager.startTicking(ServerEntityManager.java:146)
+	at knot//net.minecraft.server.world.ServerEntityManager.addEntity(ServerEntityManager.java:120)
+	at knot//net.minecraft.server.world.ServerEntityManager.addEntity(ServerEntityManager.java:91)
+	at knot//net.minecraft.server.world.ServerWorld.addEntity(ServerWorld.java:996)
+	at knot//net.minecraft.server.world.ServerWorld.spawnEntity(ServerWorld.java:946)
+	at knot//net.minecraft.entity.LivingEntity.displayDamageNumber(LivingEntity.java:5810)
+	at knot//net.minecraft.entity.LivingEntity.handler$zng000$enchantment_transfer_table$showDamageIndicator(LivingEntity.java:5784)
+	at knot//net.minecraft.entity.LivingEntity.damage(LivingEntity.java:1314)
+	at knot//net.minecraft.entity.mob.ZombieEntity.damage(ZombieEntity.java:286)
+	at knot//net.minecraft.entity.Entity.baseTick(Entity.java:704)
+	at knot//net.minecraft.entity.LivingEntity.baseTick(LivingEntity.java:387)
+	at knot//net.minecraft.entity.mob.MobEntity.baseTick(MobEntity.java:320)
+	at knot//net.minecraft.entity.Entity.tick(Entity.java:667)
+	at knot//net.minecraft.entity.LivingEntity.tick(LivingEntity.java:2446)
+	at knot//net.minecraft.entity.mob.MobEntity.tick(MobEntity.java:392)
+	at knot//net.minecraft.entity.mob.ZombieEntity.tick(ZombieEntity.java:229)
+	at knot//net.minecraft.server.world.ServerWorld.tickEntity(ServerWorld.java:796)
+	at knot//net.minecraft.world.World.tickEntity(World.java:548)
+	at knot//net.minecraft.server.world.ServerWorld.method_31420(ServerWorld.java:433)
+	at knot//net.minecraft.world.EntityList.forEach(EntityList.java:76)
+	at knot//net.minecraft.server.world.ServerWorld.tick(ServerWorld.java:414)
+	at knot//net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:1053)
+	at knot//net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:952)
+	at knot//net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:106)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:747)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:288)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at knot//it.unimi.dsi.fastutil.ints.Int2ObjectLinkedOpenHashMap.insert(Int2ObjectLinkedOpenHashMap.java:311)
+	at knot//it.unimi.dsi.fastutil.ints.Int2ObjectLinkedOpenHashMap.put(Int2ObjectLinkedOpenHashMap.java:323)
+	at knot//net.minecraft.world.EntityList.ensureSafe(EntityList.java:34)
+	at knot//net.minecraft.world.EntityList.add(EntityList.java:44)
+	at knot//net.minecraft.server.world.ServerWorld$ServerEntityHandler.startTicking(ServerWorld.java:1935)
+	at knot//net.minecraft.server.world.ServerWorld$ServerEntityHandler.startTicking(ServerWorld.java:1928)
+	at knot//net.minecraft.server.world.ServerEntityManager.startTicking(ServerEntityManager.java:146)
+	at knot//net.minecraft.server.world.ServerEntityManager.addEntity(ServerEntityManager.java:120)
+	at knot//net.minecraft.server.world.ServerEntityManager.addEntity(ServerEntityManager.java:91)
+	at knot//net.minecraft.server.world.ServerWorld.addEntity(ServerWorld.java:996)
+	at knot//net.minecraft.server.world.ServerWorld.spawnEntity(ServerWorld.java:946)
+	at knot//net.minecraft.entity.LivingEntity.displayDamageNumber(LivingEntity.java:5810)
+	at knot//net.minecraft.entity.LivingEntity.handler$zng000$enchantment_transfer_table$showDamageIndicator(LivingEntity.java:5784)
+	at knot//net.minecraft.entity.LivingEntity.damage(LivingEntity.java:1314)
+	at knot//net.minecraft.entity.mob.ZombieEntity.damage(ZombieEntity.java:286)
+	at knot//net.minecraft.entity.Entity.baseTick(Entity.java:704)
+	at knot//net.minecraft.entity.LivingEntity.baseTick(LivingEntity.java:387)
+	at knot//net.minecraft.entity.mob.MobEntity.baseTick(MobEntity.java:320)
+	at knot//net.minecraft.entity.Entity.tick(Entity.java:667)
+	at knot//net.minecraft.entity.LivingEntity.tick(LivingEntity.java:2446)
+	at knot//net.minecraft.entity.mob.MobEntity.tick(MobEntity.java:392)
+	at knot//net.minecraft.entity.mob.ZombieEntity.tick(ZombieEntity.java:229)
+	at knot//net.minecraft.server.world.ServerWorld.tickEntity(ServerWorld.java:796)
+	at knot//net.minecraft.world.World.tickEntity(World.java:548)
+	at knot//net.minecraft.server.world.ServerWorld.method_31420(ServerWorld.java:433)
+	at knot//net.minecraft.world.EntityList.forEach(EntityList.java:76)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:zombie (net.minecraft.entity.mob.ZombieEntity)
+	Entity ID: 136
+	Entity Name: Zombie
+	Entity's Exact location: 85.72, 65.00, 154.47
+	Entity's Block location: World: (85,65,154), Section: (at 5,1,10 in 5,4,9; chunk contains blocks 80,-64,144 to 95,319,159), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at knot//net.minecraft.world.World.tickEntity(World.java:548)
+	at knot//net.minecraft.server.world.ServerWorld.method_31420(ServerWorld.java:433)
+	at knot//net.minecraft.world.EntityList.forEach(EntityList.java:76)
+	at knot//net.minecraft.server.world.ServerWorld.tick(ServerWorld.java:414)
+	at knot//net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:1053)
+	at knot//net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:952)
+	at knot//net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:106)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:747)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:288)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayerEntity['Player941'/69, l='ServerLevel[New World]', x=-0.30, y=68.00, z=185.29]]
+	Chunk stats: 4761
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (16,64,160), Section: (at 0,0,0 in 1,4,10; chunk contains blocks 16,-64,160 to 31,319,175), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 215547 game time, 215547 day time
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Level weather: Rain time: 59201 (now: false), thunder time: 106711 (now: false)
+	Known server brands: fabric
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 996
+Stacktrace:
+	at knot//net.minecraft.server.world.ServerWorld.addDetailsToCrashReport(ServerWorld.java:1921)
+	at knot//net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:1056)
+	at knot//net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:952)
+	at knot//net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:106)
+	at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:747)
+	at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:288)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.6, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 659636296 bytes (629 MiB) / 1707081728 bytes (1628 MiB) up to 8350859264 bytes (7964 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 9700X 8-Core Processor             
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 3.79
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 4070 SUPER
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 12282.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.6636
+	Graphics card #1 name: AMD Radeon(TM) Graphics
+	Graphics card #1 vendor: Advanced Micro Devices, Inc.
+	Graphics card #1 VRAM (MiB): 512.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.11024.2
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 47209.43
+	Virtual memory used (MiB): 17370.90
+	Swap memory total (MiB): 15360.00
+	Swap memory used (MiB): 41.19
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 1447487.38, total: 1906812.00
+	Space in storage for workdir (MiB): available: 1447487.38, total: 1906812.00
+	JVM Flags: 0 total; 
+	Fabric Mods: 
+		enchantment_transfer_table: Enchantment Transfer Table 1.2_1.21.1
+		fabric-api: Fabric API 0.115.1+1.21.1
+		fabric-api-base: Fabric API Base 0.4.42+6573ed8c19
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.70+b559734419
+		fabric-biome-api-v1: Fabric Biome API (v1) 13.0.31+d527f9fd19
+		fabric-block-api-v1: Fabric Block API (v1) 1.0.22+0af3f5a719
+		fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.10+6573ed8c19
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.52+0af3f5a719
+		fabric-client-tags-api-v1: Fabric Client Tags 1.1.15+6573ed8c19
+		fabric-command-api-v1: Fabric Command API (v1) 1.2.49+f71b366f19
+		fabric-command-api-v2: Fabric Command API (v2) 2.2.28+6ced4dd919
+		fabric-commands-v0: Fabric Commands (v0) 0.2.66+df3654b319
+		fabric-content-registries-v0: Fabric Content Registries (v0) 8.0.18+b559734419
+		fabric-convention-tags-v1: Fabric Convention Tags 2.1.3+7f945d5b19
+		fabric-convention-tags-v2: Fabric Convention Tags (v2) 2.10.0+9465b64419
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.29+0af3f5a719
+		fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.4.1+9ed317f519
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 20.2.26+16c4ae2519
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 4.0.0+6fc22b9919
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.7.0+2122d82819
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.7.13+ba9dae0619
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.53+6ced4dd919
+		fabric-gametest-api-v1: Fabric Game Test API (v1) 2.0.5+6fc22b9919
+		fabric-item-api-v1: Fabric Item API (v1) 11.1.1+d5debaed19
+		fabric-item-group-api-v1: Fabric Item Group API (v1) 4.1.6+6823f7cd19
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.47+0af3f5a719
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.45+df3654b319
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.5.0+01d9a51c19
+		fabric-loot-api-v2: Fabric Loot API (v2) 3.0.15+3f89f5a519
+		fabric-loot-api-v3: Fabric Loot API (v3) 1.0.3+3f89f5a519
+		fabric-message-api-v1: Fabric Message API (v1) 6.0.13+6573ed8c19
+		fabric-model-loading-api-v1: Fabric Model Loading API (v1) 2.0.0+fe474d6b19
+		fabric-networking-api-v1: Fabric Networking API (v1) 4.3.0+c7469b2119
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 15.2.1+40875a9319
+		fabric-particles-v1: Fabric Particles (v1) 4.0.2+6573ed8c19
+		fabric-recipe-api-v1: Fabric Recipe API (v1) 5.0.14+248df81c19
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 5.2.0+34f5d91419
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 3.4.0+c705a49c19
+		fabric-renderer-indigo: Fabric Renderer - Indigo 1.7.0+c705a49c19
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.68+df3654b319
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.48+73761d2e19
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.1.6+1daea21519
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.71+df3654b319
+		fabric-rendering-v1: Fabric Rendering (v1) 5.0.5+df16efd019
+		fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 4.3.0+8dc279b119
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 1.3.1+5b5275af19
+		fabric-screen-api-v1: Fabric Screen API (v1) 2.0.25+8b68f1c719
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.88+b559734419
+		fabric-sound-api-v1: Fabric Sound API (v1) 1.0.23+6573ed8c19
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 5.4.2+c24bd99419
+		fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 6.2.0+45b9699719
+		fabricloader: Fabric Loader 0.16.10
+		java: OpenJDK 64-Bit Server VM 21
+		minecraft: Minecraft 1.21.1
+		mixinextras: MixinExtras 0.4.1
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayerEntity['Player941'/69, l='ServerLevel[New World]', x=-0.30, y=68.00, z=185.29]]
+	Active Data Packs: vanilla, fabric, enchantment_transfer_table, fabric-convention-tags-v2, fabric-gametest-api-v1
+	Available Data Packs: bundle, enchantment_transfer_table, fabric, fabric-convention-tags-v2, fabric-gametest-api-v1, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -8071190465359973717
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fabric'; Server brand changed to 'fabric'
+	Launched Version: Fabric

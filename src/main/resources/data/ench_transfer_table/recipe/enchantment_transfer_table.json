@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "pattern": [
+    " N ",
+    "DOD",
+    "OOO"
+  ],
+  "result": {
+    "id": "ench_transfer_table:enchantment_transfer_table",
+    "count": 1
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "ench_transfer_table:block/enchantment_transfer_table_block" }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "enchantment_transfer_table",
+  "version": "${version}",
+
+  "name": "Enchantment Transfer Table",
+  "description": "A mod adding a table to transfer enchantments from an item to a book.",
+  "authors": [
+    "BurningAspect"
+  ],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/ench_transfer_table/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": ["org.burningaspect.enchantment_transfer_table.TransferTableDataGenerator"],
+    "client": ["org.burningaspect.enchantment_transfer_table.client.EnchantmentTransferTableClient"],
+    "main": ["org.burningaspect.enchantment_transfer_table.EnchantmentTransferTable"]
+  },
+
+  "mixins": [
+    "enchantment_transfer_table.mixins.json"
+    ,{
+      "config": "enchantment_transfer_table.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

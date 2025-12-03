@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:experience_bottle"
+    },
+    {
+      "item": "ench_transfer_table:nether_star_fragment"
+    }
+  ],
+  "result": {
+    "id": "ench_transfer_table:transfer_charge",
+    "count": 4
+  }
+}

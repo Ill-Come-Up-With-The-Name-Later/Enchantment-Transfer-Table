@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "enchantment_copier",
+  "category": "building",
+  "pattern": [
+    "LEL",
+    "EBE",
+    "LEL"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "E": {
+      "item": "minecraft:experience_bottle"
+    },
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "id": "ench_transfer_table:enchantment_copier",
+    "count": 1
+  }
+}

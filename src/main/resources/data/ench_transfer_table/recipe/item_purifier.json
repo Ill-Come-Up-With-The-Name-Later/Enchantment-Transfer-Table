@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "item_purifier",
+  "category": "building",
+  "pattern": [
+    " L ",
+    "LNL",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "ench_transfer_table:item_purifier",
+    "count": 1
+  }
+}

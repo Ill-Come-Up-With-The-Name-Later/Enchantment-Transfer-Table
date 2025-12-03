@@ -1,0 +1,23 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-03-24 14:12:03 -0400"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_leggings": "2025-03-24 14:14:30 -0400"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:beach": "2025-03-24 14:13:11 -0400",
+      "minecraft:forest": "2025-03-24 14:12:52 -0400",
+      "minecraft:plains": "2025-03-24 14:13:00 -0400"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

@@ -1,0 +1,50 @@
+/xp set @s 1000 levels
+/gamemode creative
+/gamemode survival
+/xp set @s 342 levels
+/difficulty peaceful
+/gamemode creative
+/gamemode survival
+/xp set @s 342 levels
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/give @s ench_transfer_table:enchantment_copier
+/gamemode survival
+/gamemode creative
+/enchant @s minecraft:sharpness 5
+/enchant @s minecraft:binding_curse
+/enchant @s minecraft:vanishing_curse
+/enchant @s minecraft:sharpness 5
+/sudo
+/z_sudp say e
+/z_sudp say
+/z_sudo say e
+/z_sudo gamemode creative BurningAspect
+/z_sudo /say e
+/z_sudo x
+/z_sudo say hi
+/z_sudo say e
+/z_sudo a
+/z_sudo say e
+/z_sudo test
+/z_sudo help
+/summon minecraft:wither
+/kill @e[type=minecraft:text_display]
+/enchant @s minecraft:binding_curse
+/enchant @s minecraft:vanishing_curse
+/gamemode survival
+/gamemode creative
+/enchant @s minecraft:sharpness 5
+/enchant @s minecraft:unbreaking 3
+/enchant @s minecraft:sharpness 5
+/enchant @s minecraft:unbreaking 3
+/gamemode survival
+/xp set @s 160000 levels
+/gamemode creative
+/kill
+/gamemode survival
+/gamemode creative
+/secret
+/secret player489
+/enchant @s minecraft:sharpness 5
